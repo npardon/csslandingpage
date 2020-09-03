@@ -1,0 +1,49 @@
+/* GOOGLE FONTS */
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+*,
+*::before,
+*::after{
+      box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #f70058;
+    --clr-dark: #0c0e36;
+    --clr-light: #fff;
+    --fw-normal: 400;
+    --fw-bold:700;
+    --fw-black: 900;
+}
+
+
+body{
+    font-family: "Work Sans", "Roboto", sans-serif;
+    font-size: 1.125rem;
+    color: var(--clr-dark)
+    line-height: 1.6;
+}
+
+/* Amazing mountain */
+logo{
+  
+
+position: absolute;
+width: 178px;
+height: 20.76px;
+left: 196px;
+top: 31px;
+
+font-family: Roboto;
+font-style: var(--fw-normal);
+font-weight: var(--fw-black);
+font-size: 17.8272px;
+line-height: 21px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color:var(--clr-dark)
+}
+
