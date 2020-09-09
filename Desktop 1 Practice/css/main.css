@@ -1,6 +1,3 @@
-/* GOOGLE FONTS */
-font-family: 'Roboto', sans-serif;
-font-family: 'Work Sans', sans-serif;
 
 *,
 *::before,
@@ -15,21 +12,58 @@ font-family: 'Work Sans', sans-serif;
     --fw-normal: 400;
     --fw-bold:700;
     --fw-black: 900;
+    --grid: 1fr;
 }
 
 
 body{
+    margin:0;
     font-family: "Work Sans", "Roboto", sans-serif;
     font-size: 1.125rem;
-    color: var(--clr-dark)
+    color: var(--clr-dark);
     line-height: 1.6;
 }
 
+h1, h2, h3{
+    line-height: 1;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight:  var(--fw-bold);
+    margin-bottom: .5em;
+    padding: .5em 1.2em;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    text-decoration; none;
+}
+
+.btn--primary{
+    background-color:  var(--clr-primary);
+    color: var(--clr-light);
+}
+
+.btn--primary: hover{
+    background-color: var(--clr-dark);
+}
+
+.btn-outline{
+    outline: 3px solid var(--clr-primary);
+    outline-offset: -3px;
+    color: var(--clr-primary);
+}
+
+.btn-outline: hover{
+    background: var(--clr -primary);
+    outline-color: var(--clr-dark);
+    color: var(--clr-light);
+
+}
 /* Amazing mountain */
 logo{
-  
-
-position: absolute;
+  position: absolute;
 width: 178px;
 height: 20.76px;
 left: 196px;
@@ -44,6 +78,101 @@ line-height: 21px;
 
 text-transform: uppercase;
 
-color:var(--clr-dark)
+color:var(--clr-dark);
 }
 
+header{
+    background-color: var (var(--clr-light));
+    text-align: center;
+}
+
+.logo{
+    margin-top: 1em;
+}
+.nav__list{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    padding:1em;
+    list-style:none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: var(--fw bold);
+    letter-spacing: 1px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color:inherit;
+}
+
+.weather{
+    display: grid;
+    grid-template-columns:min-content 1fr ;
+    background-color: var(--clr-dark);
+    color:var(--clr-light);
+}
+
+.weather__icon{
+    grid-row:span 2;
+    background-color: var(--clr-primary);
+    padding: .5em;
+    display: flex;}
+
+    .weather__info{
+        margin:0;
+        margin-left:0.75em;
+        text-align: left;
+        color:rgb(255,255,255,0.7);
+        font-weight: --var(fw-bold);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: .75rem;
+        display: flex;
+        align-items:center;
+    }
+
+    .weather__info span{
+        color:var(--clr-light);
+        margin-left:auto;
+        margin-right: 0.75rem;
+        font-size: 1rem;
+        text-transform: none;
+    }
+
+    .weather__info: first-of-type{
+        margin-top:.5em;
+        margin-bottom:.5rem;
+        position: relative;
+        
+          }
+
+    .weather__info: first-of-type: :after{
+        content: ' ';
+        position: absolute;
+        background: var(--clr-light);
+        opacity: .25;
+        height: 2px;
+        width:calc(100% - .75rem);
+        bottom:0;
+ 
+    }
+    
+    .weather__info: last-of-type{
+        margin-bottom:.5em;
+    }
+
+    .main{
+        padding: 3em 1em 5rem;
+    }
+
+    .ski{
+         background-image: url("../images/ski.jpg");
+         background-size: cover;
+         background-repeat:no-repeat;
+    }
+    .main__title{
+        line-height: 1;
+        font-weight: var(--fw-black);
+        font-size: 3rem;
+    }
